@@ -41,6 +41,28 @@ namespace HalloweenSoundGenerator
 			}
 		}
 		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f050002
+			public const int effect_now = 2131034114;
+			
+			// aapt resource value: 0x7f050000
+			public const int imageView1 = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int start_stop = 2131034113;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
+			{
+			}
+		}
+		
 		public partial class Layout
 		{
 			
@@ -57,11 +79,66 @@ namespace HalloweenSoundGenerator
 			}
 		}
 		
-		public partial class String
+		public partial class Raw
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int app_name = 2130903040;
+			public const int chainsaw2 = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int ghost01 = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int ghost02 = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int haunting = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int lab = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int laughhowl1 = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int Monster_Footsteps = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int OldDoorCreakingSoundBiblecom1197162460 = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int pig = 2130903048;
+			
+			// aapt resource value: 0x7f030009
+			public const int SCREAM_4 = 2130903049;
+			
+			// aapt resource value: 0x7f03000a
+			public const int sono_moo = 2130903050;
+			
+			// aapt resource value: 0x7f03000b
+			public const int wickedmalelaugh1 = 2130903051;
+			
+			// aapt resource value: 0x7f03000c
+			public const int wickedwitchlaugh = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int Wolf_Howl = 2130903053;
+			
+			static Raw()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Raw()
+			{
+			}
+		}
+		
+		public partial class String
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int app_name = 2130968576;
 			
 			static String()
 			{
