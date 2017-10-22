@@ -49,13 +49,14 @@ namespace HalloweenSoundGenerator
             if (_repeatEffectsRunning)
             {
                 StopService(new Intent(this, typeof(SoundEffectService)));
-                startButton.Text = "Start Background Horror";
+                startButton.Text = "Start Auto Play";
                 _repeatEffectsRunning = false;
                 return;
             }
 
             StartService(new Intent(this, typeof(SoundEffectService)));
-            startButton.Text = "Stop Background Horror";
+            startButton.Text = "Stop Auto Play";
+            Toast.MakeText(this, "Horror sounds will play in the background.", ToastLength.Long).Show();
             _repeatEffectsRunning = true;
         }
 
@@ -68,11 +69,11 @@ namespace HalloweenSoundGenerator
         {
             if (_repeatEffectsRunning)
             {
-                startButton.Text = "Stop Background Horror";
+                startButton.Text = "Stop Auto Play";
                 return;
             }
 
-            startButton.Text = "Start Background Horror";
+            startButton.Text = "Start Auto Play";
         }
     }
 }

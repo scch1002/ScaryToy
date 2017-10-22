@@ -22,7 +22,7 @@
         android:gravity="center|bottom"
         android:orientation="vertical">
         <Button
-            android:text="Start Background Horror"
+            android:text="Start Auto Play"
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:id="@+id/start_stop"
