@@ -4,6 +4,8 @@ using Android.OS;
 using Android.Content;
 using System;
 using System.Threading.Tasks;
+using Android.Graphics;
+using Android.Views;
 
 namespace HalloweenSoundGenerator
 {
@@ -26,6 +28,8 @@ namespace HalloweenSoundGenerator
             nowButton.Click += SeoundEffectNow_Click;
             startButton.Click += StartButton_Click;
 
+            nowButton.Touch += NowButton_Touch;
+
             if (savedInstanceState != null)
             {
                 _repeatEffectsRunning = savedInstanceState.GetBoolean(_repeatEffectsRunning_string);
@@ -33,6 +37,21 @@ namespace HalloweenSoundGenerator
             }
 
             _halloweenSoundEffects = new HalloweenSoundEffects(this);
+        }
+
+        private void NowButton_Touch(object sender, Android.Views.View.TouchEventArgs e)
+        {
+            var nowButton = FindViewById<Button>(Resource.Id.effect_now);
+
+            if (e.Event.Action == MotionEventActions.Down)
+            {
+                SetPressedState(nowButton);
+            }
+            else if (e.Event.Action == MotionEventActions.Up)
+            {
+                SetRegularState(nowButton);
+                Task.Run(() => _halloweenSoundEffects.PlaySoundEffect());
+            }
         }
 
         protected override void OnSaveInstanceState(Bundle savedInstanceState)
@@ -50,12 +69,14 @@ namespace HalloweenSoundGenerator
             {
                 StopService(new Intent(this, typeof(SoundEffectService)));
                 startButton.Text = "Start Auto Play";
+                SetRegularState(startButton);
                 _repeatEffectsRunning = false;
                 return;
             }
 
             StartService(new Intent(this, typeof(SoundEffectService)));
             startButton.Text = "Stop Auto Play";
+            SetPressedState(startButton);
             Toast.MakeText(this, "Horror sounds will play in the background.", ToastLength.Long).Show();
             _repeatEffectsRunning = true;
         }
@@ -74,6 +95,18 @@ namespace HalloweenSoundGenerator
             }
 
             startButton.Text = "Start Auto Play";
+        }
+
+        private void SetPressedState(Button button)
+        {
+            button.SetTextColor(new Color(GetColor(Android.Resource.Color.HoloOrangeDark)));
+            button.SetBackgroundResource(Resource.Drawable.HalloweenButtonPressed);
+        }
+
+        private void SetRegularState(Button button)
+        {
+            button.SetTextColor(new Color(GetColor(Android.Resource.Color.Black)));
+            button.SetBackgroundResource(Resource.Drawable.HalloweenButton);
         }
     }
 }
