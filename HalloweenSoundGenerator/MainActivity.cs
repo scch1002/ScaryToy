@@ -12,6 +12,7 @@ namespace HalloweenSoundGenerator
     {
         private const string _repeatEffectsRunning_string = "repeatEffectsRunning";
         private bool _repeatEffectsRunning;
+        private HalloweenSoundEffects _halloweenSoundEffects;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -30,6 +31,8 @@ namespace HalloweenSoundGenerator
                 _repeatEffectsRunning = savedInstanceState.GetBoolean(_repeatEffectsRunning_string);
                 SetStateOfStartStopButton(startButton);
             }
+
+            _halloweenSoundEffects = new HalloweenSoundEffects(this);
         }
 
         protected override void OnSaveInstanceState(Bundle savedInstanceState)
@@ -58,7 +61,7 @@ namespace HalloweenSoundGenerator
 
         private async void SeoundEffectNow_Click(object sender, EventArgs e)
         {
-            await Task.Run(() => new HalloweenSoundEffects(this).PlaySoundEffect());
+            await Task.Run(() => _halloweenSoundEffects.PlaySoundEffect());
         }
 
         private void SetStateOfStartStopButton(Button startButton)

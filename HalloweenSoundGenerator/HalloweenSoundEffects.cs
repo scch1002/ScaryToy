@@ -15,8 +15,9 @@ namespace HalloweenSoundGenerator
 {
     public class HalloweenSoundEffects
     {
-        private Random _random = new Random();
-        private Context _context;
+        private readonly Dictionary<int, MediaPlayer> _soundDictionary = new Dictionary<int, MediaPlayer>();
+        private readonly Random _random = new Random();
+        private readonly Context _context;
 
         public HalloweenSoundEffects(Context context)
         {
@@ -43,10 +44,14 @@ namespace HalloweenSoundGenerator
 
         public void PlaySoundEffect()
         {
-            using (var soundEffectPlayer = MediaPlayer.Create(_context, RandomSoundEffect()))
+            var soundeffectKey = RandomSoundEffect();
+
+            if(!_soundDictionary.ContainsKey(soundeffectKey))
             {
-                soundEffectPlayer.Start();
+                _soundDictionary.Add(soundeffectKey, MediaPlayer.Create(_context, soundeffectKey));
             }
+
+            _soundDictionary[soundeffectKey].Start();
         }
 
         private int RandomSoundEffect()
