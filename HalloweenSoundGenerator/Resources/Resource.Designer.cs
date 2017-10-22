@@ -41,17 +41,33 @@ namespace HalloweenSoundGenerator
 			}
 		}
 		
+		public partial class Drawable
+		{
+			
+			// aapt resource value: 0x7f020000
+			public const int pumpkin = 2130837504;
+			
+			static Drawable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Drawable()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050002
-			public const int effect_now = 2131034114;
+			// aapt resource value: 0x7f070002
+			public const int effect_now = 2131165186;
 			
-			// aapt resource value: 0x7f050000
-			public const int imageView1 = 2131034112;
+			// aapt resource value: 0x7f070000
+			public const int imageView1 = 2131165184;
 			
-			// aapt resource value: 0x7f050001
-			public const int start_stop = 2131034113;
+			// aapt resource value: 0x7f070001
+			public const int start_stop = 2131165185;
 			
 			static Id()
 			{
@@ -66,8 +82,8 @@ namespace HalloweenSoundGenerator
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f020000
-			public const int Main = 2130837504;
+			// aapt resource value: 0x7f040000
+			public const int Main = 2130968576;
 			
 			static Layout()
 			{
@@ -79,50 +95,66 @@ namespace HalloweenSoundGenerator
 			}
 		}
 		
-		public partial class Raw
+		public partial class Mipmap
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int chainsaw2 = 2130903040;
+			public const int ic_launcher = 2130903040;
 			
-			// aapt resource value: 0x7f030001
-			public const int ghost01 = 2130903041;
+			static Mipmap()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
 			
-			// aapt resource value: 0x7f030002
-			public const int ghost02 = 2130903042;
+			private Mipmap()
+			{
+			}
+		}
+		
+		public partial class Raw
+		{
 			
-			// aapt resource value: 0x7f030003
-			public const int haunting = 2130903043;
+			// aapt resource value: 0x7f050000
+			public const int chainsaw2 = 2131034112;
 			
-			// aapt resource value: 0x7f030004
-			public const int lab = 2130903044;
+			// aapt resource value: 0x7f050001
+			public const int ghost01 = 2131034113;
 			
-			// aapt resource value: 0x7f030005
-			public const int laughhowl1 = 2130903045;
+			// aapt resource value: 0x7f050002
+			public const int ghost02 = 2131034114;
 			
-			// aapt resource value: 0x7f030006
-			public const int Monster_Footsteps = 2130903046;
+			// aapt resource value: 0x7f050003
+			public const int haunting = 2131034115;
 			
-			// aapt resource value: 0x7f030007
-			public const int OldDoorCreakingSoundBiblecom1197162460 = 2130903047;
+			// aapt resource value: 0x7f050004
+			public const int lab = 2131034116;
 			
-			// aapt resource value: 0x7f030008
-			public const int pig = 2130903048;
+			// aapt resource value: 0x7f050005
+			public const int laughhowl1 = 2131034117;
 			
-			// aapt resource value: 0x7f030009
-			public const int SCREAM_4 = 2130903049;
+			// aapt resource value: 0x7f050006
+			public const int Monster_Footsteps = 2131034118;
 			
-			// aapt resource value: 0x7f03000a
-			public const int sono_moo = 2130903050;
+			// aapt resource value: 0x7f050007
+			public const int OldDoorCreakingSoundBiblecom1197162460 = 2131034119;
 			
-			// aapt resource value: 0x7f03000b
-			public const int wickedmalelaugh1 = 2130903051;
+			// aapt resource value: 0x7f050008
+			public const int pig = 2131034120;
 			
-			// aapt resource value: 0x7f03000c
-			public const int wickedwitchlaugh = 2130903052;
+			// aapt resource value: 0x7f050009
+			public const int SCREAM_4 = 2131034121;
 			
-			// aapt resource value: 0x7f03000d
-			public const int Wolf_Howl = 2130903053;
+			// aapt resource value: 0x7f05000a
+			public const int sono_moo = 2131034122;
+			
+			// aapt resource value: 0x7f05000b
+			public const int wickedmalelaugh1 = 2131034123;
+			
+			// aapt resource value: 0x7f05000c
+			public const int wickedwitchlaugh = 2131034124;
+			
+			// aapt resource value: 0x7f05000d
+			public const int Wolf_Howl = 2131034125;
 			
 			static Raw()
 			{
@@ -137,8 +169,8 @@ namespace HalloweenSoundGenerator
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int app_name = 2130968576;
+			// aapt resource value: 0x7f060000
+			public const int app_name = 2131099648;
 			
 			static String()
 			{

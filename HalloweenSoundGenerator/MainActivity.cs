@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HalloweenSoundGenerator
 {
-    [Activity(Label = "Halloween Sounds", MainLauncher = true, Theme = "@android:style/Theme.Material.Light")]
+    [Activity(Label = "Halloween Sounds", MainLauncher = true, Icon = "@mipmap/ic_launcher", Theme = "@android:style/Theme.Material.Light")]
     public class MainActivity : Activity
     {
         private const string _repeatEffectsRunning_string = "repeatEffectsRunning";

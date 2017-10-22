@@ -69,7 +69,9 @@
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
     <None Include="Resources\AboutResources.txt" />
-    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -78,14 +80,7 @@
     </AndroidResource>
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
-    <Folder Include="Resources\mipmap-hdpi\" />
-    <Folder Include="Resources\mipmap-mdpi\" />
-    <Folder Include="Resources\mipmap-xhdpi\" />
-    <Folder Include="Resources\mipmap-xxhdpi\" />
-    <Folder Include="Resources\mipmap-xxxhdpi\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\raw\chainsaw2.mp3" />
   </ItemGroup>
@@ -127,6 +122,24 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\Wolf_Howl.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pumpkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
