@@ -46,13 +46,13 @@ namespace HalloweenSoundGenerator
             if (_repeatEffectsRunning)
             {
                 StopService(new Intent(this, typeof(SoundEffectService)));
-                startButton.Text = "Start";
+                startButton.Text = "Start Background Horror";
                 _repeatEffectsRunning = false;
                 return;
             }
 
             StartService(new Intent(this, typeof(SoundEffectService)));
-            startButton.Text = "Stop";
+            startButton.Text = "Stop Background Horror";
             _repeatEffectsRunning = true;
         }
 
@@ -65,11 +65,11 @@ namespace HalloweenSoundGenerator
         {
             if (_repeatEffectsRunning)
             {
-                startButton.Text = "Stop";
+                startButton.Text = "Stop Background Horror";
                 return;
             }
 
-            startButton.Text = "Start";
+            startButton.Text = "Start Background Horror";
         }
     }
 }
