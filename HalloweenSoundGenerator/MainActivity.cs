@@ -82,7 +82,7 @@ namespace HalloweenSoundGenerator
             StartService(new Intent(this, typeof(SoundEffectService)));
             startButton.Text = "Stop Auto Play";
             SetPressedState(startButton);
-            Toast.MakeText(this, "Horror sounds will play in the background.", ToastLength.Long).Show();
+            Toast.MakeText(this, "Halloween sounds will play in the background, once every 1 to 5 minutes.", ToastLength.Long).Show();
             _repeatEffectsRunning = true;
         }
 
