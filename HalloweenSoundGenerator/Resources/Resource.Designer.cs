@@ -172,16 +172,13 @@ namespace HalloweenSoundGenerator
 			public const int scream = 2131034128;
 			
 			// aapt resource value: 0x7f050011
-			public const int u_s_national_park_service_american_crow = 2131034129;
+			public const int witch = 2131034129;
 			
 			// aapt resource value: 0x7f050012
-			public const int witch = 2131034130;
+			public const int zombie = 2131034130;
 			
 			// aapt resource value: 0x7f050013
-			public const int zombie = 2131034131;
-			
-			// aapt resource value: 0x7f050014
-			public const int zombie_brains = 2131034132;
+			public const int zombie_brains = 2131034131;
 			
 			static Raw()
 			{

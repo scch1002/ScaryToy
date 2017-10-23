@@ -156,9 +156,6 @@
     <AndroidResource Include="Resources\raw\goblin_laugh.wav" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\u_s_national_park_service_american_crow.flac" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\raw\evil_laughing.wav" />
   </ItemGroup>
   <ItemGroup>

@@ -29,7 +29,6 @@ namespace HalloweenSoundGenerator
         private static int[] SoundEffects = new[]
         {
             Resource.Raw.witch,
-            Resource.Raw.u_s_national_park_service_american_crow,
             Resource.Raw.horror_sound,
             Resource.Raw.happy_halloween,
             Resource.Raw.goblin_laugh,
