@@ -46,7 +46,7 @@ namespace HalloweenSoundGenerator
     
         private void StartSoundEffects()
         {
-            _soundEffectTimer = new Timer(PlaySoundEffect, null, new TimeSpan(0, 0, 5), new TimeSpan(0, 0, 0));
+            _soundEffectTimer = new Timer(PlaySoundEffect, null, new TimeSpan(0, _random.Next(1, 5), 0), new TimeSpan(0, 0, 0));
         }
 
         private void PlaySoundEffect(Object status)
