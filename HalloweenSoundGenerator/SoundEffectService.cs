@@ -52,7 +52,8 @@ namespace HalloweenSoundGenerator
         private void PlaySoundEffect(Object status)
         {
             _halloweenSoundEffects.PlaySoundEffect();
-            _soundEffectTimer.Change(new TimeSpan(0, 0, _random.Next(1, 5)), new TimeSpan(0, 0, 0));
+            //_soundEffectTimer.Change(new TimeSpan(0, 0, _random.Next(1, 5)), new TimeSpan(0, 0, 0));
+            _soundEffectTimer.Change(new TimeSpan(0, _random.Next(0, 4), _random.Next(1, 59)), new TimeSpan(0, 0, 0));
         }
     }
 }

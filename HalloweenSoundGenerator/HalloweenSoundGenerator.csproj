@@ -143,6 +143,30 @@
   <ItemGroup>
     <AndroidResource Include="Resources\raw\Scary1449371204.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\scream.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\a_murder_of_crows_in_the_daytime.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\horror_sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\goblin_laugh.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\u_s_national_park_service_american_crow.flac" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\evil_laughing.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\witch.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\happy_halloween.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 		Other similar extension points exist, see Microsoft.Common.targets.

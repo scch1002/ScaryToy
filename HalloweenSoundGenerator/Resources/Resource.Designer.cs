@@ -121,43 +121,67 @@ namespace HalloweenSoundGenerator
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int creepy_whispers_2 = 2131034112;
+			public const int a_murder_of_crows_in_the_daytime = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int creepy_whispers_2_1 = 2131034113;
+			public const int creepy_whispers_2 = 2131034113;
 			
 			// aapt resource value: 0x7f050002
-			public const int demonic_woman_scream = 2131034114;
+			public const int creepy_whispers_2_1 = 2131034114;
 			
 			// aapt resource value: 0x7f050003
-			public const int evil_laugh = 2131034115;
+			public const int demonic_woman_scream = 2131034115;
 			
 			// aapt resource value: 0x7f050004
-			public const int evil_witch_cackle = 2131034116;
+			public const int evil_laugh = 2131034116;
 			
 			// aapt resource value: 0x7f050005
-			public const int Female_Scream_Horror138499973 = 2131034117;
+			public const int evil_laughing = 2131034117;
 			
 			// aapt resource value: 0x7f050006
-			public const int ghost_voice_i_see_you = 2131034118;
+			public const int evil_witch_cackle = 2131034118;
 			
 			// aapt resource value: 0x7f050007
-			public const int ghost_voice_why_cant_you_see_me = 2131034119;
+			public const int Female_Scream_Horror138499973 = 2131034119;
 			
 			// aapt resource value: 0x7f050008
-			public const int halloween_001_wav_120b = 2131034120;
+			public const int ghost_voice_i_see_you = 2131034120;
 			
 			// aapt resource value: 0x7f050009
-			public const int oh_god_wah = 2131034121;
+			public const int ghost_voice_why_cant_you_see_me = 2131034121;
 			
 			// aapt resource value: 0x7f05000a
-			public const int Scary1449371204 = 2131034122;
+			public const int goblin_laugh = 2131034122;
 			
 			// aapt resource value: 0x7f05000b
-			public const int zombie = 2131034123;
+			public const int halloween_001_wav_120b = 2131034123;
 			
 			// aapt resource value: 0x7f05000c
-			public const int zombie_brains = 2131034124;
+			public const int happy_halloween = 2131034124;
+			
+			// aapt resource value: 0x7f05000d
+			public const int horror_sound = 2131034125;
+			
+			// aapt resource value: 0x7f05000e
+			public const int oh_god_wah = 2131034126;
+			
+			// aapt resource value: 0x7f05000f
+			public const int Scary1449371204 = 2131034127;
+			
+			// aapt resource value: 0x7f050010
+			public const int scream = 2131034128;
+			
+			// aapt resource value: 0x7f050011
+			public const int u_s_national_park_service_american_crow = 2131034129;
+			
+			// aapt resource value: 0x7f050012
+			public const int witch = 2131034130;
+			
+			// aapt resource value: 0x7f050013
+			public const int zombie = 2131034131;
+			
+			// aapt resource value: 0x7f050014
+			public const int zombie_brains = 2131034132;
 			
 			static Raw()
 			{

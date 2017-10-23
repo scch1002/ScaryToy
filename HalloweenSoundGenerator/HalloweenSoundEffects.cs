@@ -18,16 +18,23 @@ namespace HalloweenSoundGenerator
         private readonly Dictionary<int, MediaPlayer> _soundDictionary = new Dictionary<int, MediaPlayer>();
         private readonly Random _random = new Random();
         private readonly Context _context;
-        private int lastPlayed;
+        //private int lastPlayed;
 
         public HalloweenSoundEffects(Context context)
         {
             _context = context;
-            lastPlayed = 0;
+            //lastPlayed = 0;
         }
 
         private static int[] SoundEffects = new[]
         {
+            Resource.Raw.witch,
+            Resource.Raw.u_s_national_park_service_american_crow,
+            Resource.Raw.horror_sound,
+            Resource.Raw.happy_halloween,
+            Resource.Raw.goblin_laugh,
+            Resource.Raw.evil_laugh,
+            Resource.Raw.a_murder_of_crows_in_the_daytime,
             Resource.Raw.creepy_whispers_2,
             Resource.Raw.creepy_whispers_2_1,
             Resource.Raw.demonic_woman_scream,
@@ -62,7 +69,7 @@ namespace HalloweenSoundGenerator
 
         //private int NextSoundEffect()
         //{
-        //    if (lastPlayed == soundEffects.Length - 1)
+        //    if (lastPlayed == SoundEffects.Length - 1)
         //    {
         //        lastPlayed = 0;
         //    }
@@ -71,7 +78,7 @@ namespace HalloweenSoundGenerator
         //        lastPlayed++;
         //    }
 
-        //    return soundEffects[lastPlayed];
+        //    return SoundEffects[lastPlayed];
         //}
     }
 }
