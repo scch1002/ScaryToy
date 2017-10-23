@@ -26,7 +26,7 @@ namespace HalloweenSoundGenerator
             lastPlayed = 0;
         }
 
-        private static int[] soundEffects = new[]
+        private static int[] SoundEffects = new[]
         {
             Resource.Raw.creepy_whispers_2,
             Resource.Raw.creepy_whispers_2_1,
@@ -57,7 +57,7 @@ namespace HalloweenSoundGenerator
 
         private int RandomSoundEffect()
         {
-            return soundEffects[_random.Next(1, soundEffects.Length - 1)];
+            return SoundEffects[_random.Next(0, SoundEffects.Length - 1)];
         }
 
         //private int NextSoundEffect()
