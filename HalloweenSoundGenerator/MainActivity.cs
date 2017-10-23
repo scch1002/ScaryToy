@@ -6,6 +6,7 @@ using System;
 using System.Threading.Tasks;
 using Android.Graphics;
 using Android.Views;
+using System.Linq;
 
 namespace HalloweenSoundGenerator
 {
@@ -25,21 +26,25 @@ namespace HalloweenSoundGenerator
             var nowButton = FindViewById<Button>(Resource.Id.effect_now);
             var startButton = FindViewById<Button>(Resource.Id.start_stop);
 
-            nowButton.Click += SeoundEffectNow_Click;
             startButton.Click += StartButton_Click;
-
             nowButton.Touch += NowButton_Touch;
+
+            _repeatEffectsRunning = IsSoundEffectServiceRunning();
 
             if (savedInstanceState != null)
             {
-                _repeatEffectsRunning = savedInstanceState.GetBoolean(_repeatEffectsRunning_string);
-                SetStateOfStartStopButton(startButton);
+                if (!_repeatEffectsRunning)
+                {
+                    _repeatEffectsRunning = savedInstanceState.GetBoolean(_repeatEffectsRunning_string);
+                }
             }
+
+            SetStateOfStartStopButton(startButton);
 
             _halloweenSoundEffects = new HalloweenSoundEffects(this);
         }
 
-        private void NowButton_Touch(object sender, Android.Views.View.TouchEventArgs e)
+        private void NowButton_Touch(object sender, View.TouchEventArgs e)
         {
             var nowButton = FindViewById<Button>(Resource.Id.effect_now);
 
@@ -81,20 +86,17 @@ namespace HalloweenSoundGenerator
             _repeatEffectsRunning = true;
         }
 
-        private async void SeoundEffectNow_Click(object sender, EventArgs e)
-        {
-            await Task.Run(() => _halloweenSoundEffects.PlaySoundEffect());
-        }
-
         private void SetStateOfStartStopButton(Button startButton)
         {
             if (_repeatEffectsRunning)
             {
                 startButton.Text = "Stop Auto Play";
+                SetPressedState(startButton);
                 return;
             }
 
             startButton.Text = "Start Auto Play";
+            SetRegularState(startButton);
         }
 
         private void SetPressedState(Button button)
@@ -107,6 +109,15 @@ namespace HalloweenSoundGenerator
         {
             button.SetTextColor(new Color(GetColor(Android.Resource.Color.Black)));
             button.SetBackgroundResource(Resource.Drawable.HalloweenButton);
+        }
+
+        private bool IsSoundEffectServiceRunning()
+        {
+            var manager = (ActivityManager)GetSystemService(ActivityService);
+
+            return manager.GetRunningServices(int.MaxValue)
+                .Any(service => service.Service.ClassName
+                    .Equals("cseu.SoundEffectService", StringComparison.InvariantCultureIgnoreCase));
         }
     }
 }

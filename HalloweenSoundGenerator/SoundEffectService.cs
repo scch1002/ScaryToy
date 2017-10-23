@@ -14,7 +14,7 @@ using Android.Media;
 
 namespace HalloweenSoundGenerator
 {
-    [Service]
+    [Service(Name = "cseu.SoundEffectService")]
     public class SoundEffectService : Service
     {
         private Random _random = new Random();
@@ -52,7 +52,7 @@ namespace HalloweenSoundGenerator
         private void PlaySoundEffect(Object status)
         {
             _halloweenSoundEffects.PlaySoundEffect();
-            _soundEffectTimer.Change(new TimeSpan(0, 0, _random.Next(1, 59)), new TimeSpan(0, 0, 0));
+            _soundEffectTimer.Change(new TimeSpan(0, 0, _random.Next(1, 5)), new TimeSpan(0, 0, 0));
         }
     }
 }
