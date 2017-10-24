@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Android.Graphics;
 using Android.Views;
 using System.Linq;
+using Android.Runtime;
 
 namespace HalloweenSoundGenerator
 {
@@ -72,17 +73,17 @@ namespace HalloweenSoundGenerator
 
             if (_repeatEffectsRunning)
             {
-                StopService(new Intent(this, typeof(SoundEffectService)));
+                StopAutoPlay();
                 startButton.Text = "Start Auto Play";
                 SetRegularState(startButton);
                 _repeatEffectsRunning = false;
                 return;
             }
 
-            StartService(new Intent(this, typeof(SoundEffectService)));
+            StartAutoPlay();
             startButton.Text = "Stop Auto Play";
             SetPressedState(startButton);
-            Toast.MakeText(this, "Halloween sounds will play in the background, once every 1 to 5 minutes.", ToastLength.Long).Show();
+            Toast.MakeText(this, "Halloween sounds will play in the background, once every 3 minutes.", ToastLength.Long).Show();
             _repeatEffectsRunning = true;
         }
 
@@ -113,11 +114,29 @@ namespace HalloweenSoundGenerator
 
         private bool IsSoundEffectServiceRunning()
         {
-            var manager = (ActivityManager)GetSystemService(ActivityService);
+            return (PendingIntent.GetBroadcast(this, 0,
+                new Intent(this, typeof(SoundEffectReceiver)),
+                PendingIntentFlags.NoCreate) != null);
+        }
 
-            return manager.GetRunningServices(int.MaxValue)
-                .Any(service => service.Service.ClassName
-                    .Equals("cseu.SoundEffectService", StringComparison.InvariantCultureIgnoreCase));
+        private void StartAutoPlay()
+        {
+            var alarmIntent = new Intent(this, typeof(SoundEffectReceiver));
+            var pending = PendingIntent.GetBroadcast(this, 0, alarmIntent, PendingIntentFlags.UpdateCurrent);
+            var interval = Convert.ToInt64(new TimeSpan(0, 3, 0).TotalMilliseconds);
+            var alarmManager = GetSystemService(AlarmService).JavaCast<AlarmManager>();
+
+            alarmManager.SetRepeating(AlarmType.ElapsedRealtimeWakeup, 0, interval, pending);
+        }
+
+        private void StopAutoPlay()
+        {
+            var alarmIntent = new Intent(this, typeof(SoundEffectReceiver));
+            var pending = PendingIntent.GetBroadcast(this, 0, alarmIntent, PendingIntentFlags.UpdateCurrent);
+            var alarmManager = GetSystemService(AlarmService).JavaCast<AlarmManager>();
+
+            alarmManager.Cancel(pending);
+            pending.Cancel();
         }
     }
 }
