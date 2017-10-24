@@ -123,7 +123,7 @@ namespace HalloweenSoundGenerator
         {
             var alarmIntent = new Intent(this, typeof(SoundEffectReceiver));
             var pending = PendingIntent.GetBroadcast(this, 0, alarmIntent, PendingIntentFlags.UpdateCurrent);
-            var interval = Convert.ToInt64(new TimeSpan(0, 0, 15).TotalMilliseconds);
+            var interval = Convert.ToInt64(new TimeSpan(0, 3, 0).TotalMilliseconds);
             var alarmManager = GetSystemService(AlarmService).JavaCast<AlarmManager>();
 
             alarmManager.SetRepeating(AlarmType.ElapsedRealtimeWakeup, 0, interval, pending);
