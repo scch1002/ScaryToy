@@ -8,6 +8,7 @@ using Android.Graphics;
 using Android.Views;
 using System.Linq;
 using Android.Runtime;
+using Android.Support.V4.Content;
 
 namespace HalloweenSoundGenerator
 {
@@ -102,13 +103,13 @@ namespace HalloweenSoundGenerator
 
         private void SetPressedState(Button button)
         {
-            button.SetTextColor(new Color(GetColor(Android.Resource.Color.HoloOrangeDark)));
+            button.SetTextColor(new Color(ContextCompat.GetColor(this, Android.Resource.Color.HoloOrangeDark)));
             button.SetBackgroundResource(Resource.Drawable.HalloweenButtonPressed);
         }
 
         private void SetRegularState(Button button)
         {
-            button.SetTextColor(new Color(GetColor(Android.Resource.Color.Black)));
+            button.SetTextColor(new Color(ContextCompat.GetColor(this, Android.Resource.Color.Black)));
             button.SetBackgroundResource(Resource.Drawable.HalloweenButton);
         }
 
