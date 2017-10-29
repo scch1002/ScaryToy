@@ -2599,6 +2599,9 @@ namespace HalloweenSoundGenerator
 			// aapt resource value: 0x7f0900a1
 			public const int Animation_AppCompat_Tooltip = 2131296417;
 			
+			// aapt resource value: 0x7f09016c
+			public const int AppTheme = 2131296620;
+			
 			// aapt resource value: 0x7f0900a2
 			public const int Base_AlertDialog_AppCompat = 2131296418;
 			

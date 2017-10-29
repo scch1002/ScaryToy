@@ -12,7 +12,7 @@ using Android.Support.V4.Content;
 
 namespace HalloweenSoundGenerator
 {
-    [Activity(Label = "Halloween Sounds", MainLauncher = true, Icon = "@mipmap/ic_launcher", Theme = "@android:style/Theme.Material.Light")]
+    [Activity(Label = "Halloween Sounds", MainLauncher = true, Icon = "@mipmap/ic_launcher")]
     public class MainActivity : Activity
     {
         private const string _repeatEffectsRunning_string = "repeatEffectsRunning";
