@@ -12,7 +12,7 @@ using Android.Support.V4.Content;
 
 namespace HalloweenSoundGenerator
 {
-    [Activity(Label = "Halloween Sounds", MainLauncher = true, Icon = "@mipmap/ic_launcher")]
+    [Activity(Label = "Christmas Sounds", MainLauncher = true, Icon = "@mipmap/ic_launcher")]
     public class MainActivity : Activity
     {
         private const string _repeatEffectsRunning_string = "repeatEffectsRunning";
@@ -103,13 +103,11 @@ namespace HalloweenSoundGenerator
 
         private void SetPressedState(Button button)
         {
-            button.SetTextColor(new Color(ContextCompat.GetColor(this, Android.Resource.Color.HoloOrangeDark)));
             button.SetBackgroundResource(Resource.Drawable.HalloweenButtonPressed);
         }
 
         private void SetRegularState(Button button)
         {
-            button.SetTextColor(new Color(ContextCompat.GetColor(this, Android.Resource.Color.Black)));
             button.SetBackgroundResource(Resource.Drawable.HalloweenButton);
         }
 

@@ -1789,7 +1789,7 @@ namespace HalloweenSoundGenerator
 			public const int notify_panel_notification_icon_bg = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int pumpkin = 2130837599;
+			public const int santa_claus = 2130837599;
 			
 			// aapt resource value: 0x7f020060
 			public const int tooltip_frame_dark = 2130837600;
