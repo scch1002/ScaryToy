@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageView
+            android:src="@drawable/santa_claus"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:id="@+id/imageView1" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <Button
+            android:text="Start Auto Play"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/start_stop"
+            android:textSize="20sp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/halloweenbutton" />
+        <Button
+            android:text="Horror Now!!"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/effect_now"
+            android:textSize="20sp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/halloweenbutton"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+</LinearLayout>
