@@ -84,7 +84,7 @@ namespace HalloweenSoundGenerator
             StartAutoPlay();
             startButton.Text = "Stop Auto Play";
             SetPressedState(startButton);
-            Toast.MakeText(this, "Halloween sounds will play in the background, once every 3 minutes.", ToastLength.Long).Show();
+            Toast.MakeText(this, "Christmas sounds will play in the background, once every 3 minutes.", ToastLength.Long).Show();
             _repeatEffectsRunning = true;
         }
 

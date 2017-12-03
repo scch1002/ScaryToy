@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Halloween Sounds</string>
+  <string name="app_name">New Year Sounds</string>
+  <string name="auto_play_active">Start Auto Play</string>
+  <string name="auto_play_deactive">Stop Auto Play</string>
+  <string name="immediate_play">Play Sound</string>
+  <string name="auto_play_description">New year sounds will play in the background, once every 3 minutes.</string>
 </resources>
