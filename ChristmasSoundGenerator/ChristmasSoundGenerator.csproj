@@ -120,9 +120,6 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\pumpkin.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
   </ItemGroup>
   <ItemGroup>
@@ -138,70 +135,40 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\Female_Scream_Horror138499973.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\zombie.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\oh_god_wah.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\demonic_woman_scream.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\ghost_voice_why_cant_you_see_me.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\creepy_whispers_2_1.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\creepy_whispers_2.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\zombie_brains.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\ghost_voice_i_see_you.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\evil_witch_cackle.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\evil_laugh.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\halloween_001_wav_120b.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\Scary1449371204.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\scream.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\a_murder_of_crows_in_the_daytime.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\horror_sound.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\goblin_laugh.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\evil_laughing.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\witch.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\happy_halloween.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\values\Style.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values-v21\Style.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\santa_claus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sant_ho_ho_ho_1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\santa_claus_merry_christmas_ho_ho_ho.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\christmas_sound_effects_merry_christmas_santa.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\deck_the_halls_christmas_jingle_played_with_bells.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bells_hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sint.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\single_jingle_bell_quick.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bells_fast.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sint2.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />

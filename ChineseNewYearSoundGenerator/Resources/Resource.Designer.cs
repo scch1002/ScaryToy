@@ -1753,28 +1753,31 @@ namespace HalloweenSoundGenerator
 			public const int HalloweenButtonPressed = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int notification_action_background = 2130837589;
+			public const int lantern = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int notification_bg = 2130837590;
+			public const int notification_action_background = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int notification_bg_low = 2130837591;
+			public const int notification_bg = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int notification_bg_low_normal = 2130837592;
+			public const int notification_bg_low = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int notification_bg_low_pressed = 2130837593;
+			public const int notification_bg_low_normal = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int notification_bg_normal = 2130837594;
+			public const int notification_bg_low_pressed = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int notification_bg_normal_pressed = 2130837595;
+			public const int notification_bg_normal = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int notification_icon_background = 2130837596;
+			public const int notification_bg_normal_pressed = 2130837596;
+			
+			// aapt resource value: 0x7f02005d
+			public const int notification_icon_background = 2130837597;
 			
 			// aapt resource value: 0x7f020062
 			public const int notification_template_icon_bg = 2130837602;
@@ -1782,14 +1785,11 @@ namespace HalloweenSoundGenerator
 			// aapt resource value: 0x7f020063
 			public const int notification_template_icon_low_bg = 2130837603;
 			
-			// aapt resource value: 0x7f02005d
-			public const int notification_tile_bg = 2130837597;
-			
 			// aapt resource value: 0x7f02005e
-			public const int notify_panel_notification_icon_bg = 2130837598;
+			public const int notification_tile_bg = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int pumpkin = 2130837599;
+			public const int notify_panel_notification_icon_bg = 2130837599;
 			
 			// aapt resource value: 0x7f020060
 			public const int tooltip_frame_dark = 2130837600;
@@ -2397,64 +2397,25 @@ namespace HalloweenSoundGenerator
 		{
 			
 			// aapt resource value: 0x7f060000
-			public const int a_murder_of_crows_in_the_daytime = 2131099648;
+			public const int huahaoyueyuan_30s = 2131099648;
 			
 			// aapt resource value: 0x7f060001
-			public const int creepy_whispers_2 = 2131099649;
+			public const int jinjihesui_30s = 2131099649;
 			
 			// aapt resource value: 0x7f060002
-			public const int creepy_whispers_2_1 = 2131099650;
+			public const int music1 = 2131099650;
 			
 			// aapt resource value: 0x7f060003
-			public const int demonic_woman_scream = 2131099651;
+			public const int xinchunle_30s = 2131099651;
 			
 			// aapt resource value: 0x7f060004
-			public const int evil_laugh = 2131099652;
+			public const int xinfunian_30s = 2131099652;
 			
 			// aapt resource value: 0x7f060005
-			public const int evil_laughing = 2131099653;
+			public const int yinxiao_170 = 2131099653;
 			
 			// aapt resource value: 0x7f060006
-			public const int evil_witch_cackle = 2131099654;
-			
-			// aapt resource value: 0x7f060007
-			public const int Female_Scream_Horror138499973 = 2131099655;
-			
-			// aapt resource value: 0x7f060008
-			public const int ghost_voice_i_see_you = 2131099656;
-			
-			// aapt resource value: 0x7f060009
-			public const int ghost_voice_why_cant_you_see_me = 2131099657;
-			
-			// aapt resource value: 0x7f06000a
-			public const int goblin_laugh = 2131099658;
-			
-			// aapt resource value: 0x7f06000b
-			public const int halloween_001_wav_120b = 2131099659;
-			
-			// aapt resource value: 0x7f06000c
-			public const int happy_halloween = 2131099660;
-			
-			// aapt resource value: 0x7f06000d
-			public const int horror_sound = 2131099661;
-			
-			// aapt resource value: 0x7f06000e
-			public const int oh_god_wah = 2131099662;
-			
-			// aapt resource value: 0x7f06000f
-			public const int Scary1449371204 = 2131099663;
-			
-			// aapt resource value: 0x7f060010
-			public const int scream = 2131099664;
-			
-			// aapt resource value: 0x7f060011
-			public const int witch = 2131099665;
-			
-			// aapt resource value: 0x7f060012
-			public const int zombie = 2131099666;
-			
-			// aapt resource value: 0x7f060013
-			public const int zombie_brains = 2131099667;
+			public const int yinxiao_276 = 2131099654;
 			
 			static Raw()
 			{
@@ -2564,6 +2525,18 @@ namespace HalloweenSoundGenerator
 			
 			// aapt resource value: 0x7f070021
 			public const int app_name = 2131165217;
+			
+			// aapt resource value: 0x7f070022
+			public const int auto_play_active = 2131165218;
+			
+			// aapt resource value: 0x7f070023
+			public const int auto_play_deactive = 2131165219;
+			
+			// aapt resource value: 0x7f070025
+			public const int auto_play_description = 2131165221;
+			
+			// aapt resource value: 0x7f070024
+			public const int immediate_play = 2131165220;
 			
 			// aapt resource value: 0x7f070013
 			public const int search_menu_title = 2131165203;
