@@ -12,7 +12,7 @@ using Android.Support.V4.Content;
 
 namespace HalloweenSoundGenerator
 {
-    [Activity(Label = "Halloween Sounds", MainLauncher = true, Icon = "@mipmap/ic_launcher")]
+    [Activity(MainLauncher = true)]
     public class MainActivity : Activity
     {
         private const string _repeatEffectsRunning_string = "repeatEffectsRunning";
@@ -75,16 +75,16 @@ namespace HalloweenSoundGenerator
             if (_repeatEffectsRunning)
             {
                 StopAutoPlay();
-                startButton.Text = "Start Auto Play";
+                startButton.Text = Resources.GetText(Resource.String.auto_play_active);
                 SetRegularState(startButton);
                 _repeatEffectsRunning = false;
                 return;
             }
 
             StartAutoPlay();
-            startButton.Text = "Stop Auto Play";
+            startButton.Text = Resources.GetText(Resource.String.auto_play_deactive);
             SetPressedState(startButton);
-            Toast.MakeText(this, "Halloween sounds will play in the background, once every 3 minutes.", ToastLength.Long).Show();
+            Toast.MakeText(this, Resources.GetText(Resource.String.auto_play_description), ToastLength.Long).Show();
             _repeatEffectsRunning = true;
         }
 
@@ -92,24 +92,24 @@ namespace HalloweenSoundGenerator
         {
             if (_repeatEffectsRunning)
             {
-                startButton.Text = "Stop Auto Play";
+                startButton.Text = Resources.GetText(Resource.String.auto_play_deactive);
                 SetPressedState(startButton);
                 return;
             }
 
-            startButton.Text = "Start Auto Play";
+            startButton.Text = Resources.GetText(Resource.String.auto_play_active);
             SetRegularState(startButton);
         }
 
         private void SetPressedState(Button button)
         {
-            button.SetTextColor(new Color(ContextCompat.GetColor(this, Android.Resource.Color.HoloOrangeDark)));
+            button.SetTextColor(Color.ParseColor("#C60606"));
             button.SetBackgroundResource(Resource.Drawable.HalloweenButtonPressed);
         }
 
         private void SetRegularState(Button button)
         {
-            button.SetTextColor(new Color(ContextCompat.GetColor(this, Android.Resource.Color.Black)));
+            button.SetTextColor(Color.ParseColor("#FFC610"));
             button.SetBackgroundResource(Resource.Drawable.HalloweenButton);
         }
 
