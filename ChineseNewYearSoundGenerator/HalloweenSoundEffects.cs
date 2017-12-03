@@ -27,25 +27,7 @@ namespace HalloweenSoundGenerator
 
         private static int[] SoundEffects = new[]
         {
-            Resource.Raw.witch,
-            Resource.Raw.horror_sound,
-            Resource.Raw.happy_halloween,
-            Resource.Raw.goblin_laugh,
-            Resource.Raw.evil_laugh,
-            Resource.Raw.a_murder_of_crows_in_the_daytime,
-            Resource.Raw.creepy_whispers_2,
-            Resource.Raw.creepy_whispers_2_1,
-            Resource.Raw.demonic_woman_scream,
-            Resource.Raw.evil_laugh,
-            Resource.Raw.evil_witch_cackle,
-            Resource.Raw.ghost_voice_i_see_you,
-            Resource.Raw.ghost_voice_why_cant_you_see_me,
-            Resource.Raw.halloween_001_wav_120b,
-            Resource.Raw.oh_god_wah,
-            Resource.Raw.zombie,
-            Resource.Raw.zombie_brains,
-            Resource.Raw.Female_Scream_Horror138499973,
-            Resource.Raw.Scary1449371204
+            Resource.Raw.music1
         };
 
         public void PlaySoundEffect()

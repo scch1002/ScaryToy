@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">春节音乐</string>
+  <string name="auto_play_active">自动播放</string>
+  <string name="auto_play_deactive">停止播放</string>
+  <string name="immediate_play">立即播放</string>
+  <string name="auto_play_description">新年音乐将在背景中持续播放，三分钟后播放下一曲</string>
+</resources>
