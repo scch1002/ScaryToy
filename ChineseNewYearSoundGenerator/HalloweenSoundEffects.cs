@@ -27,7 +27,13 @@ namespace HalloweenSoundGenerator
 
         private static int[] SoundEffects = new[]
         {
-            Resource.Raw.music1
+            Resource.Raw.music1,
+            Resource.Raw.huahaoyueyuan_30s,
+            Resource.Raw.jinjihesui_30s,
+            Resource.Raw.xinchunle_30s,
+            Resource.Raw.xinfunian_30s,
+            Resource.Raw.yinxiao_170,
+            Resource.Raw.yinxiao_276
         };
 
         public void PlaySoundEffect()

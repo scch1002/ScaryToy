@@ -2397,7 +2397,25 @@ namespace HalloweenSoundGenerator
 		{
 			
 			// aapt resource value: 0x7f060000
-			public const int music1 = 2131099648;
+			public const int huahaoyueyuan_30s = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int jinjihesui_30s = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int music1 = 2131099650;
+			
+			// aapt resource value: 0x7f060003
+			public const int xinchunle_30s = 2131099651;
+			
+			// aapt resource value: 0x7f060004
+			public const int xinfunian_30s = 2131099652;
+			
+			// aapt resource value: 0x7f060005
+			public const int yinxiao_170 = 2131099653;
+			
+			// aapt resource value: 0x7f060006
+			public const int yinxiao_276 = 2131099654;
 			
 			static Raw()
 			{
