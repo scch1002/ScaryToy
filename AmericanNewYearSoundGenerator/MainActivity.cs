@@ -12,7 +12,7 @@ using Android.Support.V4.Content;
 
 namespace HalloweenSoundGenerator
 {
-    [Activity(Label = "Halloween Sounds", MainLauncher = true, Icon = "@mipmap/ic_launcher")]
+    [Activity(MainLauncher = true)]
     public class MainActivity : Activity
     {
         private const string _repeatEffectsRunning_string = "repeatEffectsRunning";
@@ -84,7 +84,7 @@ namespace HalloweenSoundGenerator
             StartAutoPlay();
             startButton.Text = "Stop Auto Play";
             SetPressedState(startButton);
-            Toast.MakeText(this, "Halloween sounds will play in the background, once every 3 minutes.", ToastLength.Long).Show();
+            Toast.MakeText(this, "New Years sounds will play in the background, once every 3 minutes.", ToastLength.Long).Show();
             _repeatEffectsRunning = true;
         }
 
@@ -103,13 +103,13 @@ namespace HalloweenSoundGenerator
 
         private void SetPressedState(Button button)
         {
-            button.SetTextColor(new Color(ContextCompat.GetColor(this, Android.Resource.Color.HoloOrangeDark)));
+            button.SetTextColor(Color.ParseColor("#F02036"));
             button.SetBackgroundResource(Resource.Drawable.HalloweenButtonPressed);
         }
 
         private void SetRegularState(Button button)
         {
-            button.SetTextColor(new Color(ContextCompat.GetColor(this, Android.Resource.Color.Black)));
+            button.SetTextColor(Color.ParseColor("#FEB242"));
             button.SetBackgroundResource(Resource.Drawable.HalloweenButton);
         }
 

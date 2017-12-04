@@ -1779,11 +1779,11 @@ namespace HalloweenSoundGenerator
 			// aapt resource value: 0x7f02005d
 			public const int notification_icon_background = 2130837597;
 			
-			// aapt resource value: 0x7f020063
-			public const int notification_template_icon_bg = 2130837603;
+			// aapt resource value: 0x7f020062
+			public const int notification_template_icon_bg = 2130837602;
 			
-			// aapt resource value: 0x7f020064
-			public const int notification_template_icon_low_bg = 2130837604;
+			// aapt resource value: 0x7f020063
+			public const int notification_template_icon_low_bg = 2130837603;
 			
 			// aapt resource value: 0x7f02005e
 			public const int notification_tile_bg = 2130837598;
@@ -1792,13 +1792,10 @@ namespace HalloweenSoundGenerator
 			public const int notify_panel_notification_icon_bg = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int pumpkin = 2130837600;
+			public const int tooltip_frame_dark = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int tooltip_frame_dark = 2130837601;
-			
-			// aapt resource value: 0x7f020062
-			public const int tooltip_frame_light = 2130837602;
+			public const int tooltip_frame_light = 2130837601;
 			
 			static Drawable()
 			{
@@ -2400,64 +2397,46 @@ namespace HalloweenSoundGenerator
 		{
 			
 			// aapt resource value: 0x7f060000
-			public const int a_murder_of_crows_in_the_daytime = 2131099648;
+			public const int alvinwhatup2__fireworks = 2131099648;
 			
 			// aapt resource value: 0x7f060001
-			public const int creepy_whispers_2 = 2131099649;
+			public const int davidbain__10_second_count_down = 2131099649;
 			
 			// aapt resource value: 0x7f060002
-			public const int creepy_whispers_2_1 = 2131099650;
+			public const int djnicke__crowd_cheering_and_clapping = 2131099650;
 			
 			// aapt resource value: 0x7f060003
-			public const int demonic_woman_scream = 2131099651;
+			public const int ecfike__let_s_go_have_a_party_man_1 = 2131099651;
 			
 			// aapt resource value: 0x7f060004
-			public const int evil_laugh = 2131099652;
+			public const int fireworks_new_years_eve = 2131099652;
 			
 			// aapt resource value: 0x7f060005
-			public const int evil_laughing = 2131099653;
+			public const int greg_baumont__uknownbottle = 2131099653;
 			
 			// aapt resource value: 0x7f060006
-			public const int evil_witch_cackle = 2131099654;
+			public const int idabrandao__champagne_glasses = 2131099654;
 			
 			// aapt resource value: 0x7f060007
-			public const int Female_Scream_Horror138499973 = 2131099655;
+			public const int kenrt__champagne_cork = 2131099655;
 			
 			// aapt resource value: 0x7f060008
-			public const int ghost_voice_i_see_you = 2131099656;
+			public const int klankbeeld__mortar_grenade_shell_002 = 2131099656;
 			
 			// aapt resource value: 0x7f060009
-			public const int ghost_voice_why_cant_you_see_me = 2131099657;
+			public const int reitanna__pinkie_it_s_party_time = 2131099657;
 			
 			// aapt resource value: 0x7f06000a
-			public const int goblin_laugh = 2131099658;
+			public const int reitanna__vocal_party_favor = 2131099658;
 			
 			// aapt resource value: 0x7f06000b
-			public const int halloween_001_wav_120b = 2131099659;
+			public const int signtoast__big_ben_chimes_in_new_year_1988 = 2131099659;
 			
 			// aapt resource value: 0x7f06000c
-			public const int happy_halloween = 2131099660;
+			public const int tiny_rocket = 2131099660;
 			
 			// aapt resource value: 0x7f06000d
-			public const int horror_sound = 2131099661;
-			
-			// aapt resource value: 0x7f06000e
-			public const int oh_god_wah = 2131099662;
-			
-			// aapt resource value: 0x7f06000f
-			public const int Scary1449371204 = 2131099663;
-			
-			// aapt resource value: 0x7f060010
-			public const int scream = 2131099664;
-			
-			// aapt resource value: 0x7f060011
-			public const int witch = 2131099665;
-			
-			// aapt resource value: 0x7f060012
-			public const int zombie = 2131099666;
-			
-			// aapt resource value: 0x7f060013
-			public const int zombie_brains = 2131099667;
+			public const int xtrgamr__countdownandcheer_02 = 2131099661;
 			
 			static Raw()
 			{

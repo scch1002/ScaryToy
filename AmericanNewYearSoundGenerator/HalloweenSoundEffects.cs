@@ -27,25 +27,20 @@ namespace HalloweenSoundGenerator
 
         private static int[] SoundEffects = new[]
         {
-            Resource.Raw.witch,
-            Resource.Raw.horror_sound,
-            Resource.Raw.happy_halloween,
-            Resource.Raw.goblin_laugh,
-            Resource.Raw.evil_laugh,
-            Resource.Raw.a_murder_of_crows_in_the_daytime,
-            Resource.Raw.creepy_whispers_2,
-            Resource.Raw.creepy_whispers_2_1,
-            Resource.Raw.demonic_woman_scream,
-            Resource.Raw.evil_laugh,
-            Resource.Raw.evil_witch_cackle,
-            Resource.Raw.ghost_voice_i_see_you,
-            Resource.Raw.ghost_voice_why_cant_you_see_me,
-            Resource.Raw.halloween_001_wav_120b,
-            Resource.Raw.oh_god_wah,
-            Resource.Raw.zombie,
-            Resource.Raw.zombie_brains,
-            Resource.Raw.Female_Scream_Horror138499973,
-            Resource.Raw.Scary1449371204
+            Resource.Raw.alvinwhatup2__fireworks,
+            Resource.Raw.davidbain__10_second_count_down,
+            Resource.Raw.djnicke__crowd_cheering_and_clapping,
+            Resource.Raw.ecfike__let_s_go_have_a_party_man_1,
+            Resource.Raw.fireworks_new_years_eve,
+            Resource.Raw.greg_baumont__uknownbottle,
+            Resource.Raw.idabrandao__champagne_glasses,
+            Resource.Raw.kenrt__champagne_cork,
+            Resource.Raw.klankbeeld__mortar_grenade_shell_002,
+            Resource.Raw.reitanna__pinkie_it_s_party_time,
+            Resource.Raw.reitanna__vocal_party_favor,
+            Resource.Raw.signtoast__big_ben_chimes_in_new_year_1988,
+            Resource.Raw.tiny_rocket,
+            Resource.Raw.xtrgamr__countdownandcheer_02
         };
 
         public void PlaySoundEffect()
