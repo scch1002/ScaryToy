@@ -32,7 +32,7 @@
             android:layout_gravity="bottom"
             android:background="@drawable/halloweenbutton" />
         <Button
-            android:text="Horror Now!!"
+            android:text="Celebrate!!!"
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:textColor="@android:color/black"
